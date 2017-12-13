@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizzapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="512dp">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="When was Manchester United founded?"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/question1"
+                android:background="@android:color/black">
+
+            </View>
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestionRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/question1"
+                android:layout_below="@id/question1"
+                android:layout_marginTop="6dp"
+                android:onClick="questionOneRightAnswer"
+                android:text="1878" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestionWrong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:onClick="questionOneWrongAnswerOne"
+                android:text="1945" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestionWrong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/question1"
+                android:layout_below="@id/question1"
+                android:layout_marginTop="6dp"
+                android:onClick="questionOneWrongAnswerTwo"
+                android:text="1880" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/radioButtonQuestionRight"
+                android:background="@android:color/black">
+
+            </View>
+
+            <TextView
+                android:id="@+id/questionTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioButtonQuestionRight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Which year did Manchester United win the treble?"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/questionTwo"
+                android:background="@android:color/black">
+
+            </View>
+
+            <CheckBox
+                android:id="@+id/questionTwoRightAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:onClick="questionTwoRightAnswer"
+                android:text="1998-99" />
+
+            <CheckBox
+                android:id="@+id/wrongAnswerOneQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/questionTwo"
+                android:layout_below="@id/questionTwo"
+                android:layout_marginTop="6dp"
+                android:onClick="questionTwoWrongAnswerTwo"
+                android:text="1988-89" />
+
+            <CheckBox
+                android:id="@+id/wrongAnswerTwoQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/questionTwo"
+                android:layout_below="@id/questionTwo"
+                android:layout_marginTop="6dp"
+                android:onClick="questionTwoWrongAnswerOne"
+                android:text="2003-04" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/wrongAnswerTwoQuestion2"
+                android:background="@android:color/black">
+
+            </View>
+
+            <TextView
+                android:id="@+id/questionThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionTwoRightAnswer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Who is Manchester Uniteds all time top scorer?"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/questionThree"
+                android:background="@android:color/black">
+
+            </View>
+
+            <CheckBox
+                android:id="@+id/questionThreeWrongAnswerTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionThree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:onClick="questionThreeWrongAnswerTwo"
+                android:text="Bobby Charlton" />
+
+            <CheckBox
+                android:id="@+id/questionThreeWrongAnswerOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/questionThree"
+                android:layout_below="@id/questionThree"
+                android:layout_marginTop="6dp"
+                android:onClick="questionThreeWrongAnswerOne"
+                android:text="Giggs" />
+
+            <CheckBox
+                android:id="@+id/questionThreeRightAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/questionThree"
+                android:layout_below="@id/questionThree"
+                android:layout_marginTop="6dp"
+                android:onClick="questionThreeRightAnswer"
+                android:text="Rooney" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/questionThreeRightAnswer"
+                android:background="@android:color/black">
+
+            </View>
+
+            <TextView
+                android:id="@+id/questionFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionThreeRightAnswer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="When was the last time Manchester United won the"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/championsLeague"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionFour"
+                android:layout_centerHorizontal="true"
+                android:text="Champions League?"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/championsLeague"
+                android:background="@android:color/black">
+
+            </View>
+
+            <CheckBox
+                android:onClick="questionFourRightAnswer"
+                android:id="@+id/questionFourRightAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/questionFour"
+                android:layout_below="@id/championsLeague"
+                android:layout_marginTop="6dp"
+                android:text="2007-08"/>
+
+            <CheckBox
+                android:onClick="questionFourWrongAnswerOne"
+                android:id="@+id/questionFourWrongAnswerOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/championsLeague"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="2000-01"/>
+
+            <CheckBox
+                android:onClick="questionFourWrongAnswerTwo"
+                android:id="@+id/questionFourWrongAnswerTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/championsLeague"
+                android:layout_alignRight="@id/questionFour"
+                android:layout_marginTop="6dp"
+                android:text="2008-09"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="submit"
+                android:text="submit" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
